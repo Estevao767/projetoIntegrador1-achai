@@ -1,0 +1,28 @@
+body{
+    margin: 50px;
+    padding: 1em;
+    margin-top: 200px;
+    margin-bottom: 5px;
+}
+
+input{
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    background-color: black;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    color: white;
+}

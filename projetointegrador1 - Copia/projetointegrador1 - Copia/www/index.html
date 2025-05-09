@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login/style.css">
+    <link rel="stylecheet" href="css/materialdesignicons.min.css">
+    <title>login app açhaí</title>
+  </head>
+  <body>
+    <div class="tela-de-login" id="tela">
+      <div id="imagem">
+        <img src="" alt="">
+      </div>
+      <div id="dados">
+        <div class="dados1">
+          <input type="text" id="gmail" required/>
+          <label >Email ID</label>
+        </div>
+        <div class="dados1">
+          <input type="password" id="senha" required/> 
+          <label>Senha</label>
+        </div>   
+      </div>
+      <div id="botoes">
+        <button  id="botao_entrada" onclick = "Sair1(event)">Entrar</button> 
+       <button id="botao_criar_conta" onclick = "Sair2(event)" >criar conta</button>
+      </div>
+    </div>
+    <div id="fadeOverlay"></div>
+    <script src="login/script.js"></script>
+  </body>
+</html>
