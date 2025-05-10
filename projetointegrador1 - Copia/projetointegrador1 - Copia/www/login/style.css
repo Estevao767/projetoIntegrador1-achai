@@ -76,10 +76,10 @@ margin-right: 30px;
 padding: 10px;
 padding-left: 0px;
 background-color: #351335 ;
-color: white;
+color: #9A7F98;
 border: none;
 background: transparent;
-border-bottom: 1px solid white;
+border-bottom: 1px solid #9A7F98;
 outline: none;
 }
 
@@ -88,7 +88,7 @@ outline: none;
   top: 10px;
   left: 0;
   font-size: 13px;
-  color: #ccc;
+  color: #9A7F98;
   pointer-events: none;
   transition: 0.3s;
   margin-left: 30px;
@@ -102,7 +102,7 @@ outline: none;
 #dados .dados1 input:valid + label {
 top: -10px;
 font-size: 11px;
-color: #fff;
+color: #9A7F98;
 }
 
 
@@ -129,11 +129,11 @@ animation: slideDown 0.5s forwards ease-in-out;
 
 @keyframes slideUp {
 from { transform: translateY(0); }
-to { transform: translateY(-30%); }
+to { transform: translateY(-60%); }
 }
 
 @keyframes slideDown {
-from { transform: translateY(-30%); }
+from { transform: translateY(-60%);}
 to { transform: translateY(0); }
 }
 
@@ -155,7 +155,7 @@ animation: slideIn 0.5s forwards ease-in-out;
 animation: fadeBody 3s forwards ease-in-out;
 }
 
-#fadeOverlay {
+#telaBranca {
   position: fixed;
   top: 0;
   left: 0;
@@ -167,11 +167,28 @@ animation: fadeBody 3s forwards ease-in-out;
   pointer-events: none;
 }
 
-.fadeInOverlay {
+.telaBrancaIr {
   animation: fadeToWhite 1s forwards ease-in-out;
 }
 
 @keyframes fadeToWhite {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.mdi-eye{
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  outline: none;
+  color: #9A7F98;
+}
+
+.mdi-eye-off{
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  font-size: 20px;
+  outline: none;
+  color: #9A7F98;
 }

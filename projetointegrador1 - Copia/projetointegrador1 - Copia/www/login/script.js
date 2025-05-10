@@ -80,14 +80,14 @@ alturaAnterior = alturaAtual;
 function Sair1(event) {
   event.preventDefault();
   const tela = document.getElementById("tela");
-  const overlay = document.getElementById("fadeOverlay");
+  const overlay = document.getElementById("telaBranca");
 
   tela.classList.add("sair");
 
   tela.addEventListener("animationend", function aoFinalSair() {
     tela.removeEventListener("animationend", aoFinalSair);
 
-    overlay.classList.add("fadeInOverlay");
+    overlay.classList.add("telaBrancaIr");
 
     overlay.addEventListener("animationend", function aoFinalOverlay() {
       overlay.removeEventListener("animationend", aoFinalOverlay);
@@ -102,6 +102,45 @@ function Sair2(event) {
   tela.classList.add("sair");
   tela.addEventListener("animationend", function aoFinalSair() {
 
-      window.location.href = "index2.html";
+      window.location.href = "criar_conta.html";
     });
   };
+
+ document.getElementById("olho").addEventListener("click", () => { 
+const tela = 
+document.getElementById("tela"); 
+const senha = 
+document.getElementById("senha"); 
+const olho = 
+document.getElementById("olho"); 
+// Sobe a tela se ainda não estiver 
+if (!tela.classList.contains("subir")) { 
+tela.classList.remove("descer"); tela.classList.add("subir"); 
+} 
+// Foca no input 
+senha.focus(); 
+// Alterna o tipo do input 
+if (senha.type === 
+"password") { 
+senha.type = "text"; 
+olho.classList.remove("mdi-eye"); 
+olho.classList.add("mdi-eye-off"); 
+} else { 
+senha.type = "password"; 
+olho.classList.remove("mdi-eye-off"); olho.classList.add("mdi-eye"); 
+} 
+}); 
+document.getElementById("senha").addEventListener("keydown", (e) => { 
+if (e.key 
+=== "Enter") { 
+  const tela =
+document.getElementById("tela"); 
+// Se a tela estiver em cima, desce 
+if (tela.classList.contains("subir")) { 
+tela.classList.remove("subir"); tela.classList.add("descer"); 
+} 
+// Também tira o foco do campo (opcional) 
+e.target.blur(); 
+} 
+
+}); 
