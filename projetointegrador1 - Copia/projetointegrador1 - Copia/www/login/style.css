@@ -22,8 +22,8 @@ position: relative;
 
 
 #botao_entrada{
-padding-left: 60px;
-padding-right: 60px;
+padding-left: 40px;
+padding-right: 40px;
 padding-top: 15px;
 padding-bottom: 15px;
 margin-bottom: 5px;
@@ -31,7 +31,7 @@ font-size: 15px;
 border-radius: 27px;
 margin-top: 30px;
 color: #9A7F98;  
-margin-left: 40px;  
+margin-left: 30px;  
 margin-right: 30px;
 background: linear-gradient(to bottom right,#3E234F, #480049);
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -40,13 +40,12 @@ outline: none;
 -webkit-tap-highlight-color: transparent;
 text-decoration: none;
 display: block;
-text-align: center;
 border: none;
 }
 
 #botao_criar_conta{
-padding-left: 45px;
-padding-right: 45px;
+padding-left: 26px;
+padding-right: 26px;
 padding-top: 15px;
 padding-bottom: 15px;
 margin-bottom: 30px;
@@ -55,8 +54,8 @@ font-size: 15px;
 margin-top: 10px;
 background: rgba(255, 255, 255, 0.05);
 color: #9A7F98;
-margin-left: 40px;
-margin-right: 30px;
+margin-left: 30px;
+margin-right:30px;
 border: 0.7px solid #290A3C;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 backdrop-filter: blur(15px);
@@ -105,8 +104,14 @@ font-size: 11px;
 color: #9A7F98;
 }
 
+#botoes {
+  justify-content: center;
+  justify-items: center;
+}
+
 
 .tela-de-login{
+
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   backdrop-filter: blur(15px);
